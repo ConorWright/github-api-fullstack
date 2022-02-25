@@ -1,7 +1,9 @@
 export const fetchRequest = async (url: string) => {
+  let api_token = process.env.REACT_APP_API_TOKEN;
+
   return fetch(url, {
     headers: {
-      Authorization: 'token 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',
+      Authorization: `token ${api_token}`,
     },
   })
     .then(response => {

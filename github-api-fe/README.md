@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+```
+# Put your token in here
+cp .env.example .env
+npm start
+```
+
 ## Boostrapping the project
 
 The following command was used to setup the project.
