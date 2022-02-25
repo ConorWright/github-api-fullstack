@@ -1,7 +1,7 @@
 import React from 'react';
-import { Avatar, Box, Heading, Text } from 'grommet';
+import { Avatar, Anchor, Box, Heading, Text } from 'grommet';
 
-function User(user: any) {
+export default function User(user: any) {
   return (
     <Box>
       <Box direction="row" gridArea="avatar" justify="center">
@@ -13,10 +13,9 @@ function User(user: any) {
       <Box direction="row" gridArea="metadata" justify="center">
         <Text>{user.user.name} | </Text>
         <Text>{user.user.location} | </Text>
-        <Text>{user.user.company}</Text>
+        <Text>{user.user.company} | </Text>
+        <Anchor href={user.user.url} label="Github"/>
       </Box>
     </Box>
   );
 }
-
-export default User;

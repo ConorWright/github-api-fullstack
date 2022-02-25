@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Box, Header, ResponsiveContext, Text } from 'grommet';
 import { Hpe } from 'grommet-icons';
 
-function AppHeader() {
+export default function AppHeader() {
   const size = useContext(ResponsiveContext);
   const [focused, setFocused] = useState(false);
   const inputRef = useRef<any>();
@@ -38,5 +38,3 @@ function AppHeader() {
     </Header>
   );
 }
-
-export default AppHeader;
