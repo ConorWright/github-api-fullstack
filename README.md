@@ -30,7 +30,7 @@ cdk deploy
 cdk destroy
 ```
 
-![Cloudformation Output](../github-api-fullstack/images/Screen%20Shot%202022-02-27%20at%209.20.40%20AM.png)
+![Cloudformation Output](./images/Screen%20Shot%202022-02-27%20at%209.20.40%20AM.png)
 
 ## Next Steps
 
