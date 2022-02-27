@@ -32,6 +32,8 @@ cdk destroy
 
 ![Cloudformation Output](./images/Screen%20Shot%202022-02-27%20at%209.20.40%20AM.png)
 
+Put this into your browzer where url path is github account: `d329wkepyps7wt.cloudfront.net/ConorWright`.
+
 ## Next Steps
 
 - Have `npm run build` run in a docker container and then use codebuild / code pipeline to deploy on a git hook.
