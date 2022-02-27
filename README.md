@@ -34,12 +34,26 @@ cdk destroy
 
 Put this into your browzer where url path is github account: `d329wkepyps7wt.cloudfront.net/ConorWright`.
 
+## Get Repos
+
+Get repos implemented with python.
+
+```bash
+# Install pipenv to manage deps
+pip install --user pipenv
+pipenv shell
+python get_repos.py
+exit # To leave your virtual environment
+```
+
+Tested with [webpack](https://github.com/webpack) repo. There are 49 repos here which are displayed in the count. `requests.json()` returns an array which we merge together and count. If you remove the `len()` you can see the repos. If it returns a count of 2, you have probably hit the github api requests limit and need to add your token to the request. See `github-api-fe` for how this is done.
+
 ## Next Steps
 
 - Have `npm run build` run in a docker container and then use codebuild / code pipeline to deploy on a git hook.
 - Have `/` redirect to a github user
 - Error handling for user not found
-- Pagination for repos greater than 30
+- Pagination for repos greater than 30 (Done in python)
 
 ## Stack
 
