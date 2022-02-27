@@ -9,6 +9,7 @@ Sign in to aws cli via sso or credentials.
 ```bash
 cd github-api-fe/
 cp .env.example .env # Put in GH token
+npm install
 npm run build
 ```
 
@@ -16,6 +17,7 @@ npm run build
 
 ```bash
 cd infra/
+npm install
 # Bootstrap your aws environment, will set up role, cloudformation bucket,etc
 # More information can be found in the CDKToolkit stack
 cdk bootstrap
