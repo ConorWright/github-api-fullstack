@@ -14,7 +14,7 @@ export default function User(user: any) {
         <Text>{user.user.name} | </Text>
         <Text>{user.user.location} | </Text>
         <Text>{user.user.company} | </Text>
-        <Anchor href={user.user.url} label="Github"/>
+        <Anchor href={user.user.html_url} label="Github" />
       </Box>
     </Box>
   );
